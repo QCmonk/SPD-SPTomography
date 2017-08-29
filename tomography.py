@@ -3,7 +3,8 @@
 # *                                                       *
 # *   Author: Joshua Morris, josh.morris@monash.edu       *
 # *                                                       *
-# *   Performs tomography          *
+# *   Performs state and process tomography given a       * 
+# *      complete measurement record.                     *
 # *********************************************************
 
 
@@ -59,7 +60,7 @@ gatedict = {'h':   _H,
             'p2':  _P2}
 
 
- # returns density operator series term constructed out of the Pauli
+# returns density operator series term constructed out of the Pauli
 # operator basis set. Defaults to Matlab compatible output
 def pauliexpand(pauli, mtlb=True):
 
